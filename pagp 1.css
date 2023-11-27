@@ -1,0 +1,139 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background: url(fondo2.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.wrap{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(0 0 0 / 2), rgb(0 0 0 / .55)), url(panda.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.wrap-texto{
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+.tipicas{
+    width: 250px;
+    height: 350px;
+    justify-content: center;
+    padding: 10px;
+}
+.horizontales{
+    width: 550px;
+    height: 350px;
+    justify-content: center;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background: rgb(148, 170, 166);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    .imagenes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .alinear{
+        margin-bottom: 10px;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .box-1{
+        flex-direction: column;
+    }
+    .box-2{
+        flex-direction: column;
+    }
+}
+.box{
+    background: fixed;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    color: rgb(50, 45, 45);
+    border-radius: 50px;
+    box-shadow: 15px 15px #060606; /*sombra a la caja*/
+    font-weight: bold;
+    background: #50504f;
+    align-items: center;
+    justify-content: left;
+}
+.box-1{
+    background: fixed;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    color: rgb(3, 36, 36);
+    border-radius: 50px;
+    box-shadow: 15px 15px rgb(11, 10, 62);
+    font-weight: bold;
+    background: rgb(15, 29, 32);
+}
+.box-2{
+    background: fixed;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    color: rgb(27, 28, 27);
+    border-radius: 50px;
+    box-shadow: 15px 15px rgb(49, 49, 49);
+    font-weight: bold;
+    background: rgb(63, 62, 65);
+    text-align: center;
+}
+.alinear{
+    width: 450px;
+    height: 250px;
+    margin: 0 5px;
+}
+.imagenes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.boton{
+    background-color: #50504f;
+    padding: 20px;
+}

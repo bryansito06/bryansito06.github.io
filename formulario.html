@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <link rel="stylesheet" href="pagp 1.css">
+    <link rel="icon" href="r.ico" />
+</head>
+<body>
+    <header>
+        <a href="Pagina principal.html" class="logo">
+            <img src="r.jpeg" alt="logo del Gym">
+            <h2 class="nombre">Rhino Gym</h2>
+        </a>
+        <nav>
+            <a href="Pagina principal.html" class="nav-link">Inicio</a>
+            <a href="" class="nav-link">Rutinas</a>
+            <a href="" class="nav-link">Tipos de Ejercicios</a>
+            <a href="" class="nav-link">Funcionamiento de maquinas</a>
+            <a href="" class="nav-link">Dietas</a>
+            <a href="formulario.html" class="nav-link">Formulario de registro</a>
+        </nav>
+    </header> <br><br>
+<font color="white">
+    <div class="box"><p>
+    <h2>Datos Personales  (presiona enviar cuando llenes todo el formulario)</h2>
+    
+    <form action="/procesar_cuestionario" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br>
+
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select><br>
+
+        <label for="estatura">Estatura (cm):</label>
+        <input type="number" id="estatura" name="estatura" required><br>
+
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" name="peso" required><br>
+        <input type="submit" value="Enviar">
+    </form></p>
+</div><br><br>
+<!-- Agrega este bloque de código dentro del cuerpo (body) de tu HTML -->
+<div class="box"><p>
+<h2>Preguntas de Salud</h2>
+
+<table>
+    <tr>
+        <td>1. ¿El médico le recomendo que solo debe hacer actividad física?</td>
+        <td><input type="radio" name="pregunta1" value="si"> Sí <input type="radio" name="pregunta1" value="no"> No</td>
+    </tr>
+    <tr>
+        <td>2. ¿Siente dolor en el pecho al hacer actividad física?</td>
+        <td><input type="radio" name="pregunta2" value="si"> Sí <input type="radio" name="pregunta2" value="no"> No</td>
+    </tr>
+    <tr>
+        <td>3. ¿Le ha dolido el pecho en el último mes, sin hacer ejercicio?</td>
+        <td><input type="radio" name="pregunta3" value="si"> Sí <input type="radio" name="pregunta3" value="no"> No</td>
+    </tr>
+    <tr>
+        <td>4. ¿Ha perdido el equilibrio por mareos o ha perdido el conocimiento?</td>
+        <td><input type="radio" name="pregunta4" value="si"> Sí <input type="radio" name="pregunta4" value="no"> No</td>
+    </tr>
+    <tr>
+        <td>5. ¿Tiene algún problema óseo o en las articulaciones que pueda empeorar con la actividad física?</td>
+        <td><input type="radio" name="pregunta5" value="si"> Sí <input type="radio" name="pregunta5" value="no"> No</td>
+    </tr>
+    <tr>
+        <td>6. ¿Su médico le ha indicado tomar medicamentos para la presión arterial o el corazón?</td>
+        <td><input type="radio" name="pregunta6" value="si"> Sí <input type="radio" name="pregunta6" value="no"> No</td>
+    </tr>
+    <tr>
+        <td>7. ¿Hay alguna otra razón por la cual no debería hacer actividad física?</td>
+        <td><input type="radio" name="pregunta7" value="si"> Sí <input type="radio" name="pregunta7" value="no"> No</td>
+    </tr>
+</table></p><br>
+</div><br><br>
+<!-- Agrega este bloque de código después de la tabla en tu HTML -->
+<div class="box"><p>
+<p>
+    Si respondió SI a al menos una de estas preguntas, debe consultar a su médico de cabecera para que le informe si es seguro realizar actividad física sin dañar su salud.
+</p></p>
+</div><br><br>
+<!-- Agrega este bloque de código después de la leyenda en tu HTML -->
+<div class="box"><p>
+<h2>Medidas</h2>
+
+<p>Medir los siguientes parámetros con cinta antropométrica:</p>
+
+<form>
+    <label for="cintura">Cintura (cm):</label>
+    <input type="number" id="cintura" name="cintura" required><br>
+
+    <label for="brazo_derecho">Brazo derecho (cm):</label>
+    <input type="number" id="brazo_derecho" name="brazo_derecho" required><br>
+
+    <label for="brazo_izquierdo">Brazo izquierdo (cm):</label>
+    <input type="number" id="brazo_izquierdo" name="brazo_izquierdo" required><br>
+
+    <label for="pierna_derecha">Pierna derecha (cm):</label>
+    <input type="number" id="pierna_derecha" name="pierna_derecha" required><br>
+
+    <label for="pierna_izquierda">Pierna izquierda (cm):</label>
+    <input type="number" id="pierna_izquierda" name="pierna_izquierda" required><br>
+</form></p>
+</div><br><br>
+<!-- Agrega este bloque de código después de la sección de Medidas en tu HTML -->
+<div class="box"><p>
+<h2>Datos Generales</h2>
+
+<form>
+    <label for="metas_entrenamiento">Cuáles son tus metas de entrenamiento?</label><br>
+    <textarea id="metas_entrenamiento" name="metas_entrenamiento" rows="4" cols="50"></textarea><br>
+
+    <label for="actividad_fisica">Actividad física que realizas:</label><br>
+    <textarea id="actividad_fisica" name="actividad_fisica" rows="4" cols="50"></textarea><br>
+
+    <label for="anos_practica">Años de práctica:</label>
+    <input type="number" id="anos_practica" name="anos_practica"><br>
+
+    <label for="frecuencia">Frecuencia:</label>
+    <input type="text" id="frecuencia" name="frecuencia"><br>
+
+    <label for="estilo_vida">Describe tu estilo de vida las 24 hrs.:</label><br>
+    <textarea id="estilo_vida" name="estilo_vida" rows="4" cols="50"></textarea><br>
+
+    <label for="ocupacion_actual">Cuál es tu ocupación actual?</label><br>
+    <textarea id="ocupacion_actual" name="ocupacion_actual" rows="4" cols="50"></textarea><br>
+</form></p>
+</div><br><br>
+<!-- Agrega este bloque de código después de la sección de Datos Generales en tu HTML -->
+<div class="box"><p>
+<h2>Preguntas Adicionales</h2>
+
+<form>
+    <label for="ocupacion_sentado">1. ¿Tu ocupación requiere que estés sentado por periodos extendidos?</label>
+    <input type="radio" name="ocupacion_sentado" value="si"> Sí
+    <input type="radio" name="ocupacion_sentado" value="no"> No<br>
+
+    <label for="cirugia">2. ¿Te han practicado alguna cirugía?</label>
+    <input type="radio" name="cirugia" value="si"> Sí
+    <input type="radio" name="cirugia" value="no"> No<br>
+    <!-- Sección para explicar la cirugía en caso de respuesta "Sí" -->
+    <textarea id="explicacion_cirugia" name="explicacion_cirugia" rows="4" cols="50"></textarea><br>
+
+    <label for="suplemento_deportivo">3. ¿Tomas algún suplemento / complemento deportivo?</label>
+    <input type="radio" name="suplemento_deportivo" value="si"> Sí
+    <input type="radio" name="suplemento_deportivo" value="no"> No<br>
+    <!-- Sección para explicar el suplemento en caso de respuesta "Sí" -->
+    <textarea id="explicacion_suplemento" name="explicacion_suplemento" rows="4" cols="50"></textarea><br>
+
+    <label for="enfermedad_diagnosticada">4. ¿Padeces alguna enfermedad diagnosticada?</label>
+    <input type="radio" name="enfermedad_diagnosticada" value="si"> Sí
+    <input type="radio" name="enfermedad_diagnosticada" value="no"> No<br>
+    <!-- Sección para explicar la enfermedad en caso de respuesta "Sí" -->
+    <textarea id="explicacion_enfermedad_diagnosticada" name="explicacion_enfermedad_diagnosticada" rows="4" cols="50"></textarea><br>
+
+    <label for="enfermedad_importante">5. ¿Has padecido alguna enfermedad importante?</label>
+    <input type="radio" name="enfermedad_importante" value="si"> Sí
+    <input type="radio" name="enfermedad_importante" value="no"> No<br>
+    <!-- Sección para explicar la enfermedad en caso de respuesta "Sí" -->
+    <textarea id="explicacion_enfermedad_importante" name="explicacion_enfermedad_importante" rows="4" cols="50"></textarea><br>
+
+    <label for="alergico_medicamento">6. ¿Eres alérgico a algún medicamento?</label>
+    <input type="radio" name="alergico_medicamento" value="si"> Sí
+    <input type="radio" name="alergico_medicamento" value="no"> No<br>
+    <!-- Sección para explicar la alergia en caso de respuesta "Sí" -->
+    <textarea id="explicacion_alergico_medicamento" name="explicacion_alergico_medicamento" rows="4" cols="50"></textarea><br>
+</form></p>
+</div><br><br>
+<!-- Agrega este bloque de código después de la sección de Preguntas Adicionales en tu HTML -->
+<div class="box"><p>
+<h2>Preguntas Adicionales (Continuación)</h2>
+
+<form>
+    <label for="alergico_alimento">1. ¿Eres alérgico a algún alimento?</label>
+    <input type="radio" name="alergico_alimento" value="si"> Sí
+    <input type="radio" name="alergico_alimento" value="no"> No<br>
+    <!-- Sección para explicar la alergia en caso de respuesta "Sí" -->
+    <textarea id="explicacion_alergico_alimento" name="explicacion_alergico_alimento" rows="4" cols="50"></textarea><br>
+
+    <label for="problema_articular">2. ¿Tienes algún problema/dolor/molestia/lesión en alguna articulación, hueso o músculo?</label>
+    <input type="radio" name="problema_articular" value="si"> Sí
+    <input type="radio" name="problema_articular" value="no"> No<br>
+    <!-- Sección para explicar el problema en caso de respuesta "Sí" -->
+    <textarea id="explicacion_problema_articular" name="explicacion_problema_articular" rows="4" cols="50"></textarea><br>
+
+    <label for="medicamento_bajar_peso">3. ¿Has usado algún medicamento para bajar de peso?</label>
+    <input type="radio" name="medicamento_bajar_peso" value="si"> Sí
+    <input type="radio" name="medicamento_bajar_peso" value="no"> No<br>
+    <!-- Sección para explicar el uso del medicamento en caso de respuesta "Sí" -->
+    <textarea id="explicacion_medicamento_bajar_peso" name="explicacion_medicamento_bajar_peso" rows="4" cols="50"></textarea><br>
+
+    <label for="diabetes_familiar">4. ¿Familiares directos con diabetes?</label>
+    <input type="radio" name="diabetes_familiar" value="si"> Sí
+    <input type="radio" name="diabetes_familiar" value="no"> No<br>
+
+    <label for="hipertension_familiar">5. ¿Familiares directos con hipertensión?</label>
+    <input type="radio" name="hipertension_familiar" value="si"> Sí
+    <input type="radio" name="hipertension_familiar" value="no"> No<br>
+
+    <label for="cancer_familiar">6. ¿Familiares directos con cáncer?</label>
+    <input type="radio" name="cancer_familiar" value="si"> Sí
+    <input type="radio" name="cancer_familiar" value="no"> No<br>
+</form></p>
+</div><br><br>
+<!-- Agrega este bloque de código después de la sección de Preguntas Adicionales (Continuación) en tu HTML -->
+<div class="box"><p>
+<h2>Entrenamiento</h2>
+
+<label for="entrenas_gimnasio">¿Actualmente entrenas en un gimnasio?</label>
+<input type="radio" name="entrenas_gimnasio" value="si"> Sí
+<input type="radio" name="entrenas_gimnasio" value="no"> No<br>
+
+<!-- Sección para preguntas adicionales si la respuesta es "Sí" -->
+<div id="preguntas_gimnasio" style="display: none;">
+    <p>Si tu respuesta fue SI, por favor contesta las siguientes preguntas:</p>
+
+    <label for="tiempo_entrenando">1. ¿Cuánto tiempo llevas entrenando?</label>
+    <input type="text" id="tiempo_entrenando" name="tiempo_entrenando"><br>
+
+    <label for="frecuencia_entrenamiento">2. ¿Con qué frecuencia entrenas a la semana?</label>
+    <input type="text" id="frecuencia_entrenamiento" name="frecuencia_entrenamiento"><br>
+
+    <label for="frecuencia_cardiovascular">3. ¿Con qué frecuencia realizas ejercicio cardiovascular?</label>
+    <input type="text" id="frecuencia_cardiovascular" name="frecuencia_cardiovascular"><br>
+
+    <label for="duracion_cardio">4. ¿Cuánto tiempo duran tus sesiones de cardio?</label>
+    <input type="text" id="duracion_cardio" name="duracion_cardio"><br>
+
+    <label for="horario_gimnasio">5. ¿En qué horario vas al gimnasio?</label>
+    <input type="text" id="horario_gimnasio" name="horario_gimnasio"><br>
+</div></p>
+</div><br><br>
+<!-- Script para mostrar/ocultar preguntas adicionales según la respuesta -->
+<script>
+    document.querySelector('input[name="entrenas_gimnasio"]').addEventListener('change', function() {
+        var preguntasGimnasio = document.getElementById('preguntas_gimnasio');
+        preguntasGimnasio.style.display = this.value === 'si' ? 'block' : 'none';
+    });
+</script>
+
+<!-- Agrega este bloque de código después de la sección de Entrenamiento en tu HTML -->
+<div class="box"><p>
+<h2>Alimentación</h2>
+
+<label for="comidas_al_dia">1. ¿Cuántas comidas realizas al día?</label>
+<input type="text" id="comidas_al_dia" name="comidas_al_dia"><br>
+
+<label for="alimentos_desagrado">2. Alimentos que no te agradan o no acostumbras</label>
+<input type="text" id="alimentos_desagrado" name="alimentos_desagrado"><br>
+
+<label for="consume_refresco">3. ¿Consumes refresco? </label>
+<input type="radio" name="consume_refresco" value="si"> Sí
+<input type="radio" name="consume_refresco" value="no"> No<br>
+
+<label for="consume_alcohol">4. ¿Consumes alcohol? </label>
+<input type="radio" name="consume_alcohol" value="si"> Sí
+<input type="radio" name="consume_alcohol" value="no"> No<br>
+<!-- Sección para preguntas adicionales si la respuesta es "Sí" -->
+<div id="preguntas_alcohol" style="display: none;">
+    <label for="frecuencia_alcohol">¿Con qué frecuencia?</label>
+    <input type="text" id="frecuencia_alcohol" name="frecuencia_alcohol"><br>
+    <label for="explicacion_alcohol">Explique:</label>
+    <textarea id="explicacion_alcohol" name="explicacion_alcohol" rows="4" cols="50"></textarea><br>
+</div>
+
+<label for="fumas">5. ¿Fumas?</label>
+<input type="radio" name="fumas" value="si"> Sí
+<input type="radio" name="fumas" value="no"> No<br>
+<!-- Sección para preguntas adicionales si la respuesta es "Sí" -->
+<div id="preguntas_fumas" style="display: none;">
+    <label for="frecuencia_fumas">¿Con qué frecuencia?</label>
+    <input type="text" id="frecuencia_fumas" name="frecuencia_fumas"><br>
+</div>
+
+<label for="litros_agua">6. ¿Cuántos litros de agua consumes al día?</label>
+<input type="text" id="litros_agua" name="litros_agua"><br>
+
+<!-- Script para mostrar/ocultar preguntas adicionales según la respuesta -->
+<script>
+    document.querySelector('input[name="consume_alcohol"]').addEventListener('change', function() {
+        var preguntasAlcohol = document.getElementById('preguntas_alcohol');
+        preguntasAlcohol.style.display = this.value === 'si' ? 'block' : 'none';
+    });
+
+    document.querySelector('input[name="fumas"]').addEventListener('change', function() {
+        var preguntasFumas = document.getElementById('preguntas_fumas');
+        preguntasFumas.style.display = this.value === 'si' ? 'block' : 'none';
+    });
+</script></p>
+</div><br><br>
+<!-- Agrega este bloque de código después de la sección de Alimentación en tu HTML -->
+<div class="box"><p>
+<h2>Descripción Detallada de Alimentación Actual</h2>
+
+<label for="descripcion_alimentacion">Describe detalladamente tu alimentación actual especificando cuántas veces y horarios:</label><br>
+<textarea id="descripcion_alimentacion" name="descripcion_alimentacion" rows="6" cols="50"></textarea><br>
+
+</p>
+</div>
+</font>
+</body>
+</html>
